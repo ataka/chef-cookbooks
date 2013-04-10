@@ -6,7 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-template "/Users/ataka-work/.Xresources" do
+template "/Users/ataka_work/.Xresources" do
   source ".Xresources.erb"
   mode 644
 end
