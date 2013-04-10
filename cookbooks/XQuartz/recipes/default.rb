@@ -6,7 +6,10 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-template "/Users/ataka_work/.Xresources" do
-  source ".Xresources.erb"
-  mode 644
+%w{ataka_work}.each do |user|
+  template "/Users/ataka_work/.Xresources" do
+    owner user
+    group "staff"
+    mode 644
+  end
 end
