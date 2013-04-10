@@ -10,6 +10,6 @@
   template "/Users/ataka_work/.Xresources" do
     owner user
     group "staff"
-    mode 644
+    mode 0664
   end
 end
