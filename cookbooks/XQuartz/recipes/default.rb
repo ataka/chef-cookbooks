@@ -10,7 +10,7 @@ users = node['XQuartz']['users']
 
 users.each do |user|
   template "Users/#{user}/.Xresources" do
-    owner user["name"]
+    owner user
     group "staff"
     mode 0664
   end
