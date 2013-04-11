@@ -1,0 +1,1 @@
+default['screen']['users'] = [ 'guest' ]
