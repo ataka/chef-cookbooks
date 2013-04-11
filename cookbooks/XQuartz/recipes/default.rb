@@ -6,9 +6,11 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-%w{ataka_work}.each do |user|
-  template "/Users/ataka_work/.Xresources" do
-    owner user
+users = node['XQuartz']['users']
+
+users.each do |user|
+  template "Users/#{user}/.Xresources" do
+    owner user["name"]
     group "staff"
     mode 0664
   end

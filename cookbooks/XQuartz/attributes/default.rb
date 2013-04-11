@@ -1,0 +1,1 @@
+default['XQuartz']['users'] = [ 'guest' ]
